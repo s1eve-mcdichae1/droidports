@@ -88,7 +88,7 @@ void setup_platform_savedir(const char *gamename)
     //TODO:: Update psvita sdk and use the newlib mkdir.
 #ifndef PLATFORM_VITA
     // For linux targets
-	snprintf(platform_savedir, sizeof(platform_savedir), "%s/.config/%s/", getenv("HOME"), gamename);
+	snprintf(platform_savedir, sizeof(platform_savedir), "%s/.config/gmloader/%s/", getenv("HOME"), gamename);
 	warning("Saving to folder %s.\n", platform_savedir);
 
     char mkdir_cmd[PATH_MAX];
